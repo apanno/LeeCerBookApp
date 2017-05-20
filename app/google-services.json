@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "176375849382",
+    "firebase_url": "https://nfecerbook.firebaseio.com",
+    "project_id": "nfecerbook",
+    "storage_bucket": "nfecerbook.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176375849382:android:3f8dec4c674879f3",
+        "android_client_info": {
+          "package_name": "com.aleetino.nfecerbookapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176375849382-0eqhrbo72hulcso962tdeka02hvejq30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGlATu-5Sl5nEzk4nXbLAoY2adtGJ6Bk0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

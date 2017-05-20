@@ -1,0 +1,107 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 368656 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:323), pid=5092, tid=13904
+#
+# JRE version:  (7.0_79-b15) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000263d800):  JavaThread "Unknown thread" [_thread_in_vm, id=13904, stack(0x0000000002640000,0x0000000002740000)]
+
+Stack: [0x0000000002640000,0x0000000002740000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000263d800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=13904, stack(0x0000000002640000,0x0000000002740000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff793380000 - 0x00007ff7933b3000 	C:\Program Files\Java\jdk1.7.0_79\bin\java.exe
+0x00007ff8b3f70000 - 0x00007ff8b4131000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff8b2530000 - 0x00007ff8b25dd000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007ff8b0df0000 - 0x00007ff8b0fd8000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007ff8b1bb0000 - 0x00007ff8b1c57000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007ff8b1900000 - 0x00007ff8b199d000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007ff8b20d0000 - 0x00007ff8b212b000 	C:\WINDOWS\system32\sechost.dll
+0x00007ff8b3bf0000 - 0x00007ff8b3d0c000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007ff8b1370000 - 0x00007ff8b14c6000 	C:\WINDOWS\system32\USER32.dll
+0x00007ff8b19a0000 - 0x00007ff8b1b26000 	C:\WINDOWS\system32\GDI32.dll
+0x00007ff8abf00000 - 0x00007ff8ac174000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10586.494_none_a2d8b04ea53e3145\COMCTL32.dll
+0x00007ff8b1d40000 - 0x00007ff8b1fbd000 	C:\WINDOWS\system32\combase.dll
+0x00007ff8b1130000 - 0x00007ff8b119a000 	C:\WINDOWS\system32\bcryptPrimitives.dll
+0x00007ff8b3dd0000 - 0x00007ff8b3e0b000 	C:\WINDOWS\system32\IMM32.DLL
+0x0000000071220000 - 0x00000000712f2000 	C:\Program Files\Java\jdk1.7.0_79\jre\bin\msvcr100.dll
+0x0000000071b60000 - 0x0000000072335000 	C:\Program Files\Java\jdk1.7.0_79\jre\bin\server\jvm.dll
+0x00007ff8b3f60000 - 0x00007ff8b3f68000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007ff88de20000 - 0x00007ff88de29000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff8b2300000 - 0x00007ff8b236b000 	C:\WINDOWS\system32\WS2_32.dll
+0x00007ff8ae880000 - 0x00007ff8ae8a3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff8ae690000 - 0x00007ff8ae6bc000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ff8b0620000 - 0x00007ff8b0663000 	C:\WINDOWS\system32\cfgmgr32.dll
+0x0000000072520000 - 0x000000007252f000 	C:\Program Files\Java\jdk1.7.0_79\jre\bin\verify.dll
+0x00000000724f0000 - 0x0000000072518000 	C:\Program Files\Java\jdk1.7.0_79\jre\bin\java.dll
+0x0000000071a60000 - 0x0000000071a75000 	C:\Program Files\Java\jdk1.7.0_79\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true -Xmx1024M -Dfile.encoding=x-windows-874 -Duser.country=GB -Duser.language=en -Duser.variant 
+java_command: com.android.dx.command.Main --dex --force-jumbo --num-threads=4 --output C:\AndroidStudioProjects\LeeCerBookApp\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.1.1_91077436324567618e7a26250cd16ddc16524603.jar C:\AndroidStudioProjects\LeeCerBookApp\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0_79
+PATH=
+[error occurred during error reporting (printing environment variables), id 0xc0000005]
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 69 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, erms, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 4083992k(318132k free), swap 16666904k(8872k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.79-b02) for windows-amd64 JRE (1.7.0_79-b15), built on Apr 10 2015 12:36:16 by "java_re" with unknown MS VC++:1600
+
+time: Tue Aug 09 20:46:22 2016
+elapsed time: 1 seconds
+
